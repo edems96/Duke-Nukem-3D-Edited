@@ -7357,7 +7357,7 @@ void copyprotect(void)
     }
 }
 
-void main(int argc,char **argv)
+int main(int argc,char **argv)
 {
     long i, j, k, l;
     int32 tempautorun;
@@ -7659,6 +7659,7 @@ void main(int argc,char **argv)
     }
 
     gameexit(" ");
+	return 0;
 }
 
 char opendemoread(char which_demo) // 0 = mine

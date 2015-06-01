@@ -37,9 +37,9 @@ extern "C" {
 #endif
 
 #if (defined(__MSDOS__) && !defined(__FLAT__))
-extern  int16    _argc;
+extern  unsigned int    _argc;
 #else
-extern  int32    _argc;
+extern  int    _argc;
 #endif
 extern  char **  _argv;
 

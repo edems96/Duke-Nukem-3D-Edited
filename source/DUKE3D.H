@@ -29,7 +29,7 @@ Prepared for public release: 03/21/2003 - Charlie Wiederhold, 3D Realms
 #include <stdlib.h>
 #include <malloc.h>
 #include <dos.h>
-#include <bios.h>
+//#include <bios.h>
 #include <io.h>
 #include <fcntl.H>
 #include <time.h>
@@ -264,10 +264,10 @@ typedef struct
     int  length, num;
 } SAMPLE;
 
-static struct animwalltype
+struct animwalltype // static 
 {
-        short wallnum;
-        long tag;
+    short wallnum;
+    long tag;
 };
 extern struct animwalltype animwall[MAXANIMWALLS];
 extern short numanimwalls,probey,lastprobey;
